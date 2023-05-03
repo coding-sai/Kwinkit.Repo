@@ -5,3 +5,5 @@ modules.exports = {
         baseDir: ["./src","./build/contracts"]
     }
 }
+
+let port = process.env.PORT || 8080
