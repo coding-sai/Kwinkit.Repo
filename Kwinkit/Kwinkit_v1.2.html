@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kwinkit - Login or Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background:
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+        }  
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #cdcdcd;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #e11584;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ac0f65;
+        }
+    </style>
+</head>
+<body style="background-color:#000000;">
+    <div class="container">
+        <form>
+            <h1><font size="7"><font color="e11584">Kwinkit</font></h1>
+            <input type="text" placeholder="Phone number, username or email" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button onclick="redirectToPage('kwinkprofilejohndoe.html')">Login</button>
+            <button onclick="redirectToPage('trendingpage.html')">Browse Anonymously</button>
+        </form>
+    </div>
+    <script>
+        function redirectToPage(pageName) {
+            window.location.href = pageName;
+        }
+    </script>
+</body>
+</html>

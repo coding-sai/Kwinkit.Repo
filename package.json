@@ -5,8 +5,8 @@
   "main": "Kwinkit.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
-    "dev": "nodemon --exec npm start"
+    "start": "npm run build && node ./build/kwinkit.js",
+    "npm run start:dev": "nodemon ./src/kwinkit.js"
   },
   "keywords": [],
   "author": "",
@@ -22,9 +22,5 @@
   "engine": {
     "node": "12.11.1",
     "npm": "6.14.8"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/node": "^7.20.7"
   }
 }
