@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node ./build/kwinkit.js",
+    "Build": "ng build --prod",
     "npm run start:dev": "nodemon ./src/kwinkit.js"
   },
   "keywords": [],
